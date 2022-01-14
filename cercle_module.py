@@ -1,17 +1,21 @@
 from math import pi
 
+
 class Cercle(object):
     "Construit des cercles de tailles variées"
+
     def __init__(self, rayon):
         self.rayon = rayon
 
     def surface(self):
-        return pi * self.rayon **2
+        return pi * self.rayon ** 2
+
 
 class Cylindre(Cercle):
     "Construit des cylindres"
+
     def __init__(self, rayon, hauteur):
-        Cercle.__init__(self,rayon)
+        Cercle.__init__(self, rayon)
         self.hauteur = hauteur
 
     def surface(self):
@@ -20,13 +24,18 @@ class Cylindre(Cercle):
     def volume(self):
         return Cercle.surface(self) * self.hauteur
 
+
 class Cone(Cylindre):
     def __int__(self, rayon, hauteur):
         Cylindre.__init__(self, rayon, hauteur)
 
     def volume(self):
-        return Cylindre.volume(self)/3
+        return Cylindre.volume(self) / 3
 
 
+def addition(a, b):
+    return a + b
 
-# print(f"De cercle_module:  __name__ == {__name__}.")
+
+if __name__ == "__main__":
+    print(addition(2, 7))
