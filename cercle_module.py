@@ -36,6 +36,10 @@ class Cone(Cylindre):
 def addition(a, b):
     return a + b
 
+def exposant(a, b):
+    return a**b
+
 
 if __name__ == "__main__":
     print(addition(2, 7))
+    print(exposant(2, 3)
