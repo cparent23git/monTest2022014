@@ -42,4 +42,4 @@ def exposant(a, b):
 
 if __name__ == "__main__":
     print(addition(2, 7))
-    print(exposant(2, 3)
+    print(exposant(2, 3))
